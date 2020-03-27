@@ -441,8 +441,8 @@ final public class AnimationView: LottieView {
    
    - Parameter for: The keypath used to search for the property.
    */
-  public func getValueProvider(for keypath: AnimationKeypath) -> Any? {
-    return animationLayer?.getValue(for: keypath)
+  public func getValueProvider(for keypath: AnimationKeypath) -> AnyValueProvider? {
+    return animationLayer?.getValueProvider(for: keypath)
   }
   
   /// Logs all child keypaths.
